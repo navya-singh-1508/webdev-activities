@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Div Grid Layout</title>
+<style>
+  * { box-sizing: border-box; }
+
+  .parent {
+    width: 1200px;
+    height: 1000px;
+    margin: 20px auto;
+    
+    display: grid;
+
+    
+    grid-template-columns: 2fr 1fr 2fr;
+
+    /* 3 rows: header | middle top | middle bottom */
+    grid-template-rows: 250px 1fr 1fr;
+    gap:20px;
+
+    
+  }
+
+     .box { border: 3px solid black; gap:20px; }
+
+  .header { grid-column: 1 / 4; background-color: blue; }    
+  .left   { grid-row: 2 / 4; background-color: rgb(255, 128, 0);}       
+  .midtop { grid-row: 2 / 3;background-color: rgb(255, 128, 0); }      
+  .midbot { grid-row: 3 / 4;background-color: rgb(255, 128, 0); }      
+  .right  { grid-row: 2 / 4;background-color: rgb(255, 128, 0); } 
+
+</style>
+</head>
+<body>
+  <div class="parent">
+    <div class="box header"></div>
+    <div class="box left"></div>
+    <div class="box midtop"></div>
+    <div class="box midbot"></div>
+    <div class="box right"></div>
+  </div>
+</body>
+</html>
