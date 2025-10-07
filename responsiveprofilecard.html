@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile Cards</title>
+    <style>
+        html, body{
+            height:100%;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            margin:auto;
+            max-width: 1200px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .box{
+            background-color: greenyellow;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            
+        }
+       
+        }
+        .box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .box h2 {
+            margin: 10px 0 5px 0;
+            font-size: 20px;
+        }
+        .box p {
+            font-size: 14px;
+            color: #555;
+        }
+        @media(max-width: 800px) {
+            .box {
+                width: 45%;
+            }
+        }
+        @media(max-width: 500px) {
+            .box {
+                width: 90%;
+            }
+        }
+
+
+        @media(max-width: 800px) {
+        .box {
+            width: 45%;
+            background-color: #32cd32; 
+        }
+    }
+
+    @media(max-width: 500px) {
+        .box {
+            width: 90%;
+            background-color: #ff6347; 
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="box">
+           <img src="profile1.jpg" alt="Profile 1">
+           <h2>Navya Singh</h2>
+           <p>Frontend Developer</p>
+       </div>
+       <div class="box">
+           <img src="profile2.jpg" alt="Profile 2">
+           <h2>Disha</h2>
+           <p>Backend Developer</p>
+       </div>
+       <div class="box">
+           <img src="profile3.jpg" alt="Profile 3">
+           <h2>Sarah</h2>
+           <p>UI/UX Designer</p>
+       </div>
+       <div class="box">
+           <img src="profile4.jpg" alt="Profile 4">
+           <h2>Rohit </h2>
+           <p>Project Manager</p>
+       </div>
+    </div>
+</body>
+</html>
