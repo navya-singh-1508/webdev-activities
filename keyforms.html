@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      padding: 40px;
+      width: 400px;
+      margin: auto;
+    }
+    button{
+      
+      padding: 20px;
+      margin-left: 40px;
+      background-color: yellow;
+      animation-name: button-animation;
+      animation-duration: 4s;
+      /* animation-iteration-count: infinite; */
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes button-animation{
+      0%{
+        background-color: rgb(21, 0, 255);
+       transform:translate(0,0);}
+
+
+    
+      40%{
+        background-color: red;
+        transform:translate(50px,0);
+       
+      }
+
+
+      80%{
+        background-color: green;
+        transform:translate(50px,100px);
+      }
+      100%{
+        background-color: yellow;
+         transform:translate(0px,100px);
+
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+  <button>Click</button>
+  </div>
+</body>
+</html>
